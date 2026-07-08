@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>حدس عدد | همراه نوجوان</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Tahoma,sans-serif;
+
+}
+
+body{
+
+    background:linear-gradient(135deg,#38bdf8,#14b8a6);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:700px;
+
+    max-width:95%;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+h1{
+
+    color:#0891b2;
+
+    margin-bottom:20px;
+
+}
+
+.info{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+input{
+
+    width:180px;
+
+    padding:12px;
+
+    font-size:24px;
+
+    text-align:center;
+
+    border:2px solid #0ea5e9;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+button,a{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    margin:10px;
+
+}
+
+#guessBtn{
+
+    background:#0ea5e9;
+
+}
+
+#restart{
+
+    background:#22c55e;
+
+}
+
+.back{
+
+    background:#64748b;
+
+}
+
+#message{
+
+    font-size:24px;
+
+    color:#2563eb;
+
+    min-height:40px;
+
+    margin-top:30px;
+
+}
+
+#tries{
+
+    font-size:20px;
+
+    margin-top:20px;
+
+    color:#444;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-dice"></i>
+
+حدس عدد
+
+</h1>
+
+<p class="info">
+
+من یک عدد بین <b>۱</b> تا <b>۱۰۰</b> انتخاب کرده‌ام.
+
+</p>
+
+<input
+
+type="number"
+
+id="guess"
+
+min="1"
+
+max="100"
+
+placeholder="عدد">
+
+<br><br>
+
+<button id="guessBtn">
+
+حدس بزن
+
+</button>
+
+<p id="message"></p>
+
+<p id="tries">
+تعداد تلاش: ۰ / ۱۰
+</p>
+
+<br>
+
+<button id="restart">
+
+شروع مجدد
+
+</button>
+
+<a href="games.html" class="back">
+
+بازگشت
+
+</a>
+
+</div>
+
+<script src="guess.js"></script>
+
+</body>
+
+</html>

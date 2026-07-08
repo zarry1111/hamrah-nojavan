@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>موسیقی | همراه نوجوان</title>
+<link rel="stylesheet" href="nojavan1.css">
+<link rel="stylesheet" href="newmodern.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>.music-box{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin:20px 0;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.music-box h3{
+
+    margin-bottom:15px;
+
+    color:#0f766e;
+
+}
+
+.music-box audio{
+
+    width:100%;
+
+}</style>
+</head>
+
+<body class="page-games">
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<span>همراه نوجوان</span>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="index.html">خانه</a></li>
+
+<li><a href="nojavani.html">نوجوانی</a></li>
+
+<li><a href="life.html">سبک زندگی</a></li>
+
+<li><a href="drugs.html">آسیب‌های اجتماعی</a></li>
+
+<li><a href="experts.html">متخصصان</a></li>
+
+<li><a href="music.html">موسیقی</a></li>
+
+<li><a href="games.html">سرگرمی</a></li>
+
+<li><a href="books.html">کتاب‌ها</a></li>
+
+<li><a href="parents.html">والدین</a></li>
+<li><a href="aboutus.html">درباره ما</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+
+<header class="hero">
+
+<img src="images/music.png" alt="سرگرمی">
+
+<div class="hero-overlay">
+
+<h1></h1>
+
+<p>
+
+
+
+</p>
+
+</div>
+
+</header>
+
+<!-- معرفی -->
+
+<div class="hero-card">
+
+<h2>
+
+<i class="fa-solid fa-gamepad"></i>
+موسیقی آرامش بخش ،غذای روح است
+
+</h2>
+
+<p>
+
+گاهی فقط چند دقیقه موسیقی آروم وآرامش بخش، حال آدم رو بهتر می‌کنه. 🎧
+یکی از آهنگ‌های آرامش‌بخش رو انتخاب کن، چند نفس عمیق بکش و به ذهنت فرصت استراحت بده. 🌿
+</p>
+
+</div>
+<div class="music-box">
+
+    <h3>بزن که خب میزنی -حاج مهدی رسولی</h3>
+
+    <audio controls>
+        <source src="audio/20.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+<div class="music-box">
+
+    <h3> تازه شو-فریدون آسرایی</h3>
+
+    <audio controls>
+        <source src="audio/13.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+<div class="music-box">
+
+    <h3>دوست دارم زندگی رو-سیروان خسروی</h3>
+
+    <audio controls>
+        <source src="audio/18.mp3" type="audio/mpeg">
+    </audio>
+
+
+<div class="music-box">
+
+    <h3>حامد زمانی -بگو نه</h3>
+
+    <audio controls>
+        <source src="audio/12.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+
+</div>
+
+
+
+<!-- چیستان -->
+
+<section class="fact-box">
+
+<h2>
+
+<i ></i>
+
+توصیه امروز
+
+</h2>
+
+<p>
+💙هر عادت خوب، یک قدم به سوی موفقیت است.
+</p>
+
+
+
+</section>
+
+<!-- پیام -->
+
+<div class="message-box">
+
+<h2>
+
+💙 برای خودت وقت بگذار؛
+</h2>
+
+<p>
+
+آرامش، بهترین هدیه‌ای است که می‌توانی به خودت بده
+
+</p>
+
+</div>
+<!--================== دکمه بازگشت ==================-->
+
+<div class="back-btn">
+
+<a href="index.html" class="btn">
+
+<i class="fa-solid fa-arrow-right"></i>
+
+بازگشت به صفحه اصلی
+</a>
+
+</div>
+<footer>
+
+<h2>همراه نوجوان</h2>
+
+<p>
+سامانه آموزشی پیشگیری از آسیب‌های اجتماعی
+</p>
+
+<p>طراح: سیده زهرا اصغری - شهرستان ساری - ناحیه یک-   
+   هنرستان حضرت خدیجه (س)
+<br>
+استاد راهنما: مهندس مریم زرگرانی
+</p>
+
+<p>
+1404-1405<br>
+تمام حقوق این پروژه محفوظ است.
+</p>
+
+</footer>
+<script>
+
+const audios = document.querySelectorAll("audio");
+
+audios.forEach(audio => {
+
+    audio.addEventListener("play", function(){
+
+        audios.forEach(item => {
+
+            if(item !== this){
+
+                item.pause();
+
+                item.currentTime = 0;
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+</body>
+
+</html>
