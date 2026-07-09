@@ -619,21 +619,12 @@ a:hover{
    
     }
 
-    .menu-btn{
-        display:block;
-    }
+    
 
-    .menu{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        margin-top:15px;
-        gap:0;
-    }
-
+    
     .menu.active{
-        display:flex;
-    }
+    display:flex !important;
+}
 
     .menu li{
         width:100%;
@@ -723,22 +714,21 @@ a:hover{
         padding:15px;
         flex-wrap:wrap;
     }
-.menu{
-    display:flex !important;
-}
+
     .menu{
-      /*  display:none;*/
+      display:none;
         width:100%;
         flex-direction:column;
         background:rgba(15,36,67,.95);
         margin-top:15px;
         border-radius:15px;
+        gap:0;
     }
 
-    .menu.active{
-        display:flex;
-    }
-
+.menu.active{
+    display:flex;
+}
+    
     .menu li{
         width:100%;
         text-align:center;
