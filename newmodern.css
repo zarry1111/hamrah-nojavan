@@ -723,9 +723,11 @@ a:hover{
         padding:15px;
         flex-wrap:wrap;
     }
-
+.menu{
+    display:flex !important;
+}
     .menu{
-        display:none;
+      /*  display:none;*/
         width:100%;
         flex-direction:column;
         background:rgba(15,36,67,.95);
