@@ -1004,3 +1004,48 @@ transition:.3s;
     background:#1565c0;
 
 }
+.menu-btn{
+        display:block;
+        font-size:28px;
+        color:white;
+        cursor:pointer;
+    }
+
+    .navbar{
+        padding:15px;
+        flex-wrap:wrap;
+    }
+
+    .menu{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:rgba(15,36,67,.95);
+        margin-top:15px;
+        border-radius:15px;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu li{
+        width:100%;
+        text-align:center;
+    }
+
+    .menu a{
+        display:block;
+        padding:15px;
+    }
+
+
+
+@media (min-width:769px){
+
+    .menu-btn{
+        display:none;
+    }
+
+}
+
