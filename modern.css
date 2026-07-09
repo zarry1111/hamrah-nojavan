@@ -764,3 +764,87 @@ transform:translateY(20px);
 .page-life .message-box{
     background:linear-gradient(135deg,#14b8a6,#0d9488);
 }
+@media (max-width:768px){
+
+    .info1-cards{
+        grid-template-columns:1fr;
+    }
+
+    .hero img{
+        width:100%;
+        height:70vh;
+        object-fit:cover;
+    }
+
+    .hero-card{
+        margin:-30px 15px 30px;
+        padding:20px;
+    }
+
+    .hero-overlay h1{
+        font-size:32px;
+    }
+
+    .hero-overlay p{
+        font-size:16px;
+        padding:0 15px;
+    }
+
+    .message-box{
+        padding:25px;
+    }
+
+    .fact-box,
+    .drug-box,
+    .warning-box{
+        width:95%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+
+    .menu-btn{
+        display:block;
+        font-size:28px;
+        color:white;
+        cursor:pointer;
+    }
+
+    .navbar{
+        padding:15px;
+        flex-wrap:wrap;
+    }
+
+    .menu{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:rgba(15,36,67,.95);
+        margin-top:15px;
+        border-radius:15px;
+    }
+
+    .menu.active{
+        display:flex;
+    }
+
+    .menu li{
+        width:100%;
+        text-align:center;
+    }
+
+    .menu a{
+        display:block;
+        padding:15px;
+    }
+
+}
+
+@media (min-width:769px){
+
+    .menu-btn{
+        display:none;
+    }
+
+}
+}
