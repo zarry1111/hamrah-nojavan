@@ -26,7 +26,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
 <span>همراه نوجوان</span>
 
 </div>
-
+<div class="menu-btn" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
 <ul class="menu">
 
 <li><a href="index.html">خانه</a></li>
@@ -46,7 +48,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
 <li><a href="books.html">کتاب‌ها</a></li>
 
 <li><a href="parents.html">والدین</a></li>
-
+<li><a href="aboutus.html">درباره ما</a></li>
 </ul>
 </nav>
 <!--======================
@@ -87,10 +89,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
 
     <div class="expert-card">
 
-        <h3>❤️معرفی</h3>
+        <h3>❤️ معرفی </h3>
 
         <p>
-           -سیده زهرا اصغری هستم هنرآموز پایه دوازدهم طراح وتوسعه دهنده پایگاههای اینترنتی از هنرستان حضرت خدیجه(س) -ناحیه یک -شهرستان ساری
+           سیده زهرا اصغری هستم هنرآموز پایه دوازدهم طراح وتوسعه دهنده پایگاههای اینترنتی از هنرستان حضرت خدیجه(س) شهرستان ساری
            
         </p>
 
@@ -101,7 +103,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         <h3>🎬 از کی پروژه رو شروع کردم</h3>
 
         <p>
-          . با توجه به علاقه ای که ازسال دهم به طراحی سایت وعلوم رایانه دارم وتاکنون درحال مهارت آموزی هستم تصمیم گرفتم یک سایت طراحی کنم واز مهر1404 طراحی این سایت  رو شروع کردم
+          . با توجه به علاقه ای که  به طراحی سایت وعلوم رایانه دارم تصمیم گرفتم یک سایت طراحی کنم واز مهر1404 طراحی سایت رو شروع کردم
         </p>
 
     </div>
@@ -121,7 +123,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         <h3> 🙏سخن آخر</h3>
 
         <p>
-        .جادارد از مدیریت محترم هنرستان سرکار خانم دهقان وهنرآموز گرامیم خانم مهندس زرگرانی بابت راهنمایی های سازنده شون قدردانی کنم 
+        . جادارد از مدیریت محترم هنرستان سرکار خانم دهقان وهنرآموز گرامیم خانم مهندس زرگرانی بابت راهنمایی های سازنده شون قدردانی کنم 
         </p>
 
     </div>
@@ -177,6 +179,10 @@ audios.forEach(audio => {
     });
 
 });
+
+function toggleMenu(){
+    document.querySelector(".menu").classList.toggle("active");
+}
 
 </script>
 </body>
