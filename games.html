@@ -29,7 +29,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <span>همراه نوجوان</span>
 
 </div>
-
+<div class="menu-btn" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
 <ul class="menu">
 
 <li><a href="index.html">خانه</a></li>
@@ -241,7 +243,11 @@ style="display:none;margin-top:20px;">
 </p>
 
 </footer>
-
+<script>
+function toggleMenu(){
+    document.querySelector(".menu").classList.toggle("active");
+}
+</script>
 </body>
 
 </html>
