@@ -611,25 +611,23 @@ a:hover{
         align-items:center;
     }
 
+            .logo{
+    width:auto;
+}
+    
 
-
-
-    .logo{
-        width:100%;
-        justify-content:space-between;
-    }
-
-    .menu-btn{
-        display:block;
-    }
-
+   
     .menu{
         display:none;
         flex-direction:column;
         width:100%;
         margin-top:15px;
         gap:0;
-    }
+       
+    box-sizing:border-box;
+    overflow:hidden;
+}
+    
 
     .menu.active{
         display:flex;
@@ -641,11 +639,12 @@ a:hover{
         border-top:1px solid rgba(255,255,255,.15);
     }
 
-    .menu a{
-        display:block;
-        padding:15px;
-    }
-
+   
+.menu a{
+    display:block;
+    padding:15px;
+    box-sizing:border-box;
+}
     .hero{
         margin-top:70px;
     }
@@ -712,12 +711,13 @@ a:hover{
 
 
     .menu-btn{
-        display:block;
-        font-size:28px;
-        color:white;
-        cursor:pointer;
-          
-    }
+    display:block;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+    margin-right:auto;
+}
+   
 
     .navbar{
         padding:15px;
@@ -747,7 +747,7 @@ a:hover{
         padding:15px;
     }
 
-}
+
 
 @media (min-width:769px){
 
