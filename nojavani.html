@@ -9,7 +9,7 @@
 
 <title>نوجوانی | همراه نوجوان</title>
 
-<link rel="stylesheet" href="nojavan.css">
+<link rel="stylesheet" href="nojavan1.css">
 <link rel="stylesheet" href="modern.css">
 
 
@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="page-nojavanii">
+<body class="page-nojavani">
     <nav class="navbar">
 
 <div class="logo">
@@ -29,7 +29,9 @@
 <span>همراه نوجوان</span>
 
 </div>
-
+<div class="menu-btn" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
 <ul class="menu">
 
 <li><a href="index.html">خانه</a></li>
@@ -218,26 +220,32 @@
 
 <footer>
 
+<h2>همراه نوجوان</h2>
+
 <p>
-
-طراح سایت : سیده زهرا اصغری |
-هنرستان حضرت خدیجه(س) مازندران - ناحیه یک - ساری |
-فرهنگی هنری فردا ۱۴۰۵-۱۴۰۴
-
+سامانه آموزشی پیشگیری از آسیب‌های اجتماعی
 </p>
 
-<p class="rahnama">
+<p>طراح: سیده زهرا اصغری - شهرستان ساری - ناحیه یک-   
+   هنرستان حضرت خدیجه (س)
+<br>
+استاد راهنما: مهندس مریم زرگرانی
+</p>
 
-استاد راهنما : خانم مهندس مریم زرگرانی
-
+<p>
+1404-1405<br>
+تمام حقوق این پروژه محفوظ است.
 </p>
 
 </footer>
 
 <script src="js/jquery-3.7.1.min.js"></script>
 
-<script ></script>
-
+<script>
+function toggleMenu(){
+    document.querySelector(".menu").classList.toggle("active");
+}
+</script>
 </body>
 
 </html>
