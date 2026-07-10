@@ -706,9 +706,7 @@ a:hover{
         background:rgba(15,36,67,.95);
         margin-top:15px;
         border-radius:15px;
-            max-height:80vh;
-    overflow-y:auto;
-    }
+            }
 
      .menu.active{
         display:flex !important;
