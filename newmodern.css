@@ -712,11 +712,15 @@ a:hover{
         display:flex !important;
         flex-direction:column !important;
     }
-    .menu li{
+    
+
+  .menu li{
+     display:list-item !important;
         width:100%;
     }
 
     .menu a{
+         display:block !important;
         display:block;
         width:100%;
         padding:12px 15px;
