@@ -721,14 +721,12 @@ a:hover{
     }
 
     .menu{
-        display:none;
-        width:100%;
-        flex-direction:column;
-        background:rgba(15,36,67,.95);
-        margin-top:15px;
-        border-radius:15px;
-      max-height:80vh;
-    overflow-y:auto;
+    display:none;
+    flex-direction:column !important;
+    width:100%;
+    background:rgba(15,36,67,.95);
+    margin-top:15px;
+    border-radius:15px;
 }
 
     .menu.active{
