@@ -700,7 +700,7 @@ a:hover{
 
 
 
-    @media (max-width:768px){
+  
 
     .navbar{
         padding:15px;
@@ -727,7 +727,9 @@ a:hover{
         background:rgba(15,36,67,.95);
         margin-top:15px;
         border-radius:15px;
-    }
+      max-height:80vh;
+    overflow-y:auto;
+}
 
     .menu.active{
         display:flex !important;
@@ -736,17 +738,20 @@ a:hover{
     .menu li{
         width:100%;
         text-align:right;
-    }
+    
+    margin:0;
+}
+   
 
     .menu a{
         display:block;
         width:100%;
-        padding:15px 20px;
-        text-align:right;
+         padding:10px 15px;
+}        text-align:right;
         box-sizing:border-box;
     }
 
-}
+
 /*======================
       Small Mobile
 =======================*/
