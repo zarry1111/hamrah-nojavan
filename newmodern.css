@@ -623,9 +623,7 @@ a:hover{
 
     
     .menu.active{
-    display:flex !important;
-}
-
+    display:flex;}
     .menu li{
         width:100%;
         text-align:center;
@@ -702,55 +700,53 @@ a:hover{
 
 
 
-    .menu-btn{
-        display:block;
-        font-size:28px;
-        color:white;
-        cursor:pointer;
-          
-    }
+    @media (max-width:768px){
 
     .navbar{
         padding:15px;
         flex-wrap:wrap;
+        display:flex;
+        align-items:center;
+    }
+
+    .logo{
+        width:auto;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:28px;
+        color:#fff;
+        cursor:pointer;
     }
 
     .menu{
-      display:none;
+        display:none;
         width:100%;
         flex-direction:column;
         background:rgba(15,36,67,.95);
         margin-top:15px;
         border-radius:15px;
-        gap:0;
     }
 
-.menu.active{
-    display:flex;
-}
-    
+    .menu.active{
+        display:flex !important;
+    }
+
     .menu li{
         width:100%;
-        text-align:center;
+        text-align:right;
     }
 
     .menu a{
         display:block;
-        padding:15px;
+        width:100%;
+        padding:15px 20px;
+        text-align:right;
+        box-sizing:border-box;
     }
 
 }
-
-@media (min-width:769px){
-
-    .menu-btn{
-        display:none;
-    }
-
-}
-
-
-
 /*======================
       Small Mobile
 =======================*/
